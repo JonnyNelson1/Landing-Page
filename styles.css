@@ -6,10 +6,10 @@ body {
 .nav-bar{
   height: 70px;
   padding: 16px;
-  background: plum;
-  border: 4px solid indigo;
+  background: #1F2937;
   display: flex;
-  justify-content: space-between;
+  flex-grow: 1;
+  justify-content: space-around;
   gap: 8px;
 }
 
@@ -17,9 +17,11 @@ body {
     color: white;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     opacity: 0.9;
-    background: black;
-    border: 4px solid red;
+    background: #7DC8A0;
     align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
     vertical-align: middle;
 }
 
@@ -28,26 +30,31 @@ body {
 }
 
 .bakery-container{
-  height: 240px;
+  height: 200px;
   padding: 16px;
-  background: plum;
-  border: 4px solid indigo;
+  background: #1F2937;
   display: flex;
   justify-content: space-between;
 }
 
-.second{
+.first{
     color: white;
-    background: black;
-    border: 4px solid red;
+    background: #7DC8A0;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
+.second{
+    padding: 5px;
+    overflow: hidden;
+}
+
 .examples-container{
-  height: 40px;
+  height: 20px;
   padding: 16px;
-  background: plum;
-  border: 4px solid indigo;
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,18 +65,19 @@ body {
     font-size: 24px;
     font-weight: bold;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    color: white;
+    color: black;
 }
 
 .image-container{
-  height: auto;
   padding: 16px;
-  background: plum;
-  border: 4px solid indigo;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
+  color: blacks;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  opacity: 0.9;
 }
 
 .img-item{
@@ -78,5 +86,31 @@ body {
     flex-grow: 0;
     flex-shrink: 0;
     text-align: center;
+}
 
+.quotation{
+    height: 240px;
+    padding: 16px;
+    background: #E5E7EB;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quotation p{
+    flex: 0 0 120px;
+    text-color: #1F2937;
+    text-size; 36px;
+}
+
+.signup-section{
+    height: 180px;
+    padding: 16px;
+    background: plum;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
