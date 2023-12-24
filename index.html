@@ -2,61 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Bakery Landing Page</title>
+    <title>Nelson Bakery</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
-    <div class="nav-bar">
-        <div class="nav-item"><h3>Nelson Bakery  </h3></div>
-        <div class="nav-item"><a href="#">Our Story</a></div>
-        <div class="nav-item"><a href="#">Products</a></div>
-        <div class="nav-item"><a href="#">Pre-Order</a></div>
-        <div class="nav-item"><a href="#">Contact</a></div>
-    </div>
-    <div class="bakery-container">
-        <div class="first">
-        <h2>Tim's Bakery Website</h2>
-        <p>Tim's Cakes are world-renowned (Northern Ireland)</p>
-        <button type="submit" class="signup-button">Sign Up</button>
-        </div>
-        <div class="second">
-        <img src=images/cropped_cottage.jpg height="200" width="400"/>
-        </div>
-    </div>
-    <div class="examples-container">
-        <h3 class="section-header">Examples Cakes</h3>
-    </div>
-    <div class="image-container">
-        <div class="img-item">
-            <img src=images/cottage.jpeg height="120" width="120">
-            <p>Description</p>
-        </div>
-        <div class="img-item">
-            <img src=images/cottage.jpeg height="120" width="120">
-            <p>of Something</p>
-        </div>
-        <div class="img-item">
-            <img src=images/cottage.jpeg height="120" width="120">
-            <p>in the Boxes</p>
-        </div>
-        <div class="img-item">
-            <img src=images/cottage.jpeg height="120" width="120">
-            <p>Above</p>
-        </div>
-    </div>
-    <div class="quotation">
-        <div class="quotation-text"><p>Nelson's Bread is the best bread in the land</p></div>
-        <div class="quotation-name"><p>- Morag Macdonald, Choccy Bear</p></div>
-    </div>
-    <div class="signup-section">
-        <div class="signup-item">
-            <p>Sign up for some bread here</p>
-            <p>Pretty Please</p>
-        </div>
-        <div>
-            <button type="submit" class="signup-button">Sign Up</button>
-        </div>
-    </div>
+<header>
+    <inner-column>
+        <h1>Heading</h1>
+    </inner-column>
+</header>
+<main>
+    <section class="welcome">
+        <inner-column>
+            <graphic-diptych>
+                <picture>
+                    <img src="images/cottage.jpeg" alt="#">
+                </picture>
+                <text-content>
+                    <h1 class="loud-voice">This site is not that awesome</h1>
+
+                    <p class="calm-voice">Here is the text to support the welcome area things
+                    that are happening somewhere on this section</p>
+
+                    <a class="button" href="#">Sign Up</a>
+                </text-content>
+            </graphic-diptych>
+        </inner-column>
+    </section>
+    <section>
+        <inner-column>
+            <products-grid>
+                <div>
+                    <h2 class="loud-voice">Our Products</h2>
+                </div>
+                <ul class="product-list">
+                    <li class="product">
+                        <product-card>
+                            <picture>
+                                <img src="images/cottage.jpeg" alt="#">
+                            </picture>
+                            <text-content>
+                                <h3 class="calm-voice">Here is the text to support the welcome area things
+                                    that are happening somewhere on this section</h3>
+                            </text-content>
+                        </product-card>
+                    </li>
+                    <li class="product">
+                        <product-card>
+                            <picture>
+                                <img src="images/cottage.jpeg" alt="#">
+                            </picture>
+                            <text-content>
+                                <h3 class="calm-voice">Here is the text to support the welcome area things
+                                    that are happening somewhere on this section</h3>
+                            </text-content>
+                        </product-card>
+                    </li>
+                    <li class="product">
+                        <product-card>
+                            <picture>
+                                <img src="images/cottage.jpeg" alt="#">
+                            </picture>
+                            <text-content>
+                                <h3 class="calm-voice">Here is the text to support the welcome area things
+                                    that are happening somewhere on this section</h3>
+                            </text-content>
+                        </product-card>
+                    </li>
+                    <li class="product">
+                        <product-card>
+                            <picture>
+                                <img src="images/cottage.jpeg" alt="#">
+                            </picture>
+                            <text-content>
+                                <h3 class="calm-voice">Here is the text to support the welcome area things
+                                    that are happening somewhere on this section</h3>
+                            </text-content>
+                        </product-card>
+                    </li>
+                </ul>
+            </products-grid>
+        </inner-column>
+    </section>
+    <section>
+        <inner-column>
+            <h2>Heading</h2>
+        </inner-column>
+    </section>
+    <section>
+        <inner-column>
+            <h2>Heading</h2>
+        </inner-column>
+    </section>
+</main>
+<footer>
+    <inner-column>
+        <h2>Footer</h2>
+    </inner-column>
+</footer>
 </body>
 </html>
