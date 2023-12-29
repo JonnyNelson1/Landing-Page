@@ -7,6 +7,7 @@ html {
     --white: #efefef;
     --dark: #1F2937;
     --light: lighterblue;
+    --gray: #E5E7EB;
 }
 
 /* SETUP */
@@ -80,6 +81,23 @@ header inner-column {
     font-size: 1rem;
     line-height: 1.3;
 }
+.quote-voice {
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    font-color: var(--dark);
+    font-weight: 50;
+    text-align: justify;
+}
+.quote-author {
+   font-family: sans-serif;
+   font-style: italic;
+   font-size: 18px;
+   font-color: var(--dark);
+   font-weight: bold;
+   margin-top: 3vh;
+   text-align: right;
+}
 
 /* COMPONENTS */
 .button {
@@ -92,9 +110,15 @@ header inner-column {
     border-radius: 6px;
 }
 
+.product-image img{
+   border-radius: 6px;
+}
+
 product-card {
     display: block;
 }
+
+
 
 /* MODULES */
 graphic-diptych {
@@ -137,13 +161,48 @@ products-grid {
     display: block;
 }
 
-products-grid h2 {
+products-grid h2, h3 {
     text-align: center;
     padding-bottom: 2vh;
+    margin-top: 1vh;
 }
 
 products-grid .product-list{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     grid-gap: 1em;
+}
+
+.quote-section {
+    background-color: var(--gray);
+    color: var(--dark);
+}
+
+quote {
+    padding: 2.5vh;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    justify-content: center;
+}
+
+.action {
+    background-color: var(--white);
+    color: var(--dark);
+}
+
+graphic-diptych-two {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+graphic-diptych-two text-content {
+    display: block;
+}
+
+
+graphic-diptych-two text-content{
+    text-align: center;
 }
