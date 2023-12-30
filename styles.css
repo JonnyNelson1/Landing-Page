@@ -34,12 +34,13 @@ p a, li a {
 }
 
 /*DEV STYLES*/
-header, footer, main {
+/* header, footer, main {
     border: 4px solid red;
 }
 section {
     border: 4px solid lime;
 }
+/*
 
 /* STRUCTURE */
 body {
@@ -50,6 +51,7 @@ body {
 main {
     flex-grow: 1;
 }
+
 inner-column {
     display: block;
     padding: 10px;
@@ -62,6 +64,17 @@ inner-column {
 }
 header inner-column {
     padding: 10px;
+}
+
+header {
+    background-color: var(--dark);
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    background-color: var(--dark);
+    color: var(--white);
 }
 
 /* TYPOGRAPHY */
@@ -118,11 +131,38 @@ product-card {
     display: block;
 }
 
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    min-height: 40px;
+    align-items: center;
+}
+nav a {
+    color: var(--white);
+}
 
+logo a{
+   font-family: sans-serif;
+   font-size: 18px;
+   font-weight: bold;
+   text-align: left;
+}
+
+links li{
+    display: inline;
+    text-align: center;
+    padding: 4px;
+}
+
+copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* MODULES */
 graphic-diptych {
-    display: block;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -167,6 +207,10 @@ products-grid h2, h3 {
     margin-top: 1vh;
 }
 
+products-grid h2 {
+    margin-bottom: 2vh;
+}
+
 products-grid .product-list{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -189,20 +233,51 @@ quote {
 
 .action {
     background-color: var(--white);
-    color: var(--dark);
+    color: var(--white);
+}
+
+.action inner-column{
 }
 
 graphic-diptych-two {
+    background-color: var(--color);
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    min-height: 200px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
 }
 
 graphic-diptych-two text-content {
     display: block;
+    text-align: center;
 }
 
-
-graphic-diptych-two text-content{
+graphic-diptych-two button-moveable {
+    display: block;
     text-align: center;
+    justify-content: center;
+}
+
+button-moveable .button {
+    border: 2px solid white;
+}
+
+graphic-diptych-two text-content p, h2, .button {
+    margin-top: 10px;
+}
+
+@media (min-width: 700px) {
+   graphic-diptych-two {
+        padding: 5vh;
+        flex-direction: row;
+        align-items: center;
+        white-space: nowrap;
+        justify-content: space-between;
+        gap: 20px;
+   }
+   graphic-diptych-two :is(text-content) {
+
+   }
 }
